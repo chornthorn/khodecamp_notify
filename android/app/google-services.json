@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "226743560960",
+    "project_id": "medical-for-developer",
+    "storage_bucket": "medical-for-developer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226743560960:android:a413789ce14c5d5c5ce1e5",
+        "android_client_info": {
+          "package_name": "com.example.medicalprometesstage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGehZg89lMe349ViLYRcNv1sbBG7mDbQo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226743560960:android:a102c222131099b65ce1e5",
+        "android_client_info": {
+          "package_name": "com.khodecamp.notify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGehZg89lMe349ViLYRcNv1sbBG7mDbQo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
