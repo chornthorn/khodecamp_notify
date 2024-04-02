@@ -1,12 +1,14 @@
 import 'dart:async';
 import 'dart:developer';
 
-import 'package:bloc/bloc.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:khodecamp/firebase_options.dart';
 import 'package:khodecamp/message_api.dart';
-import 'package:firebase_analytics/firebase_analytics.dart';
+
+import 'versions/bloc/app_version/app_version_cubit.dart';
 
 class AppBlocObserver extends BlocObserver {
   const AppBlocObserver();
@@ -43,5 +45,14 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
 
   await MessageApi().init();
 
-  runApp(await builder());
+  runApp(
+    MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (context) => AppVersionCubit()..check(),
+        ),
+      ],
+      child: await builder(),
+    ),
+  );
 }

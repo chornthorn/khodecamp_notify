@@ -13,8 +13,6 @@ class Application : FlutterApplication() {
         super.onCreate();
         FlutterLoader.Settings()
     }
-
-
     private fun createChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             // Create the NotificationChannel
