@@ -23,7 +23,7 @@ dependencies:
   equatable: ^2.0.5
   upgrader: ^10.0.1
   http: ^1.2.1
-  package_info_plus: ^6.0.0
+  package_info_plus: ^8.0.0
 
 
 dev_dependencies:
